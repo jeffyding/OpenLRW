@@ -2,21 +2,23 @@ package unicon.matthews.oneroster.exception;
 
 
 /**
+ * Represents a generic HTTP response for exceptions.
+ *
  * @author stalele
  *
  */
 public class ExceptionResponse {
 
+	private String description;
+
 	public ExceptionResponse(String description) {
-		super();
 		this.description = description;
 	}
 
-	private String description;
-
 	public String getDescription() {
-		return description;
+		return this.description;
 	}
+
 	public void setDescription(String description) {
 		this.description = description;
 	}
